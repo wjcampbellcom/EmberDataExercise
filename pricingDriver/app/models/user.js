@@ -13,11 +13,8 @@ export default Model.extend({
   active: attr('boolean'),
   direct: attr('boolean'),
   companyName: attr('string'),
-  profileImageUrl: attr('image-url'),
   createdDate: attr('number'),
   lastModified: attr('number'),
   lastLogin: attr('number'),
-
-  profileImage: attr('file'),
 
 });
