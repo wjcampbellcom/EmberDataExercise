@@ -1,0 +1,18 @@
+<div class="container col-xs-12">
+<div class="row">
+  {{#bs-dropdown}}
+    {{#bs-dropdown-button}}SELECT A PRINTLAB TO EDIT<span class="caret"></span>{{/bs-dropdown-button}}
+    {{#bs-dropdown-menu}}
+      {{#each model as |user|}}
+          <li>
+            {{#link-to "labs.lab" user.id}}
+              {{user.companyName}}
+            {{/link-to}}
+          </li>
+      {{/each}}
+    {{/bs-dropdown-menu}}
+  {{/bs-dropdown}}
+</div>
+</div>
+
+{{outlet}}

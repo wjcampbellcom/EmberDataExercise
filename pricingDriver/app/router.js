@@ -10,6 +10,11 @@ Router.map(function() {
   this.route('defineCurrency');
   this.route('assignCurrency');
   this.route('definePriceType');
+  this.route('labs', function() {
+    this.route('lab', {
+      path: ':id'
+    });
+  });
 });
 
 export default Router;

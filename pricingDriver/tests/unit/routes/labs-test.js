@@ -1,6 +1,6 @@
 import { moduleFor, test } from 'ember-qunit';
 
-moduleFor('route:assign-currency', 'Unit | Route | assign currency', {
+moduleFor('route:labs', 'Unit | Route | labs', {
   // Specify the other units that are required for this test.
   // needs: ['controller:foo']
 });

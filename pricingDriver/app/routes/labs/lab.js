@@ -2,14 +2,11 @@ import Ember from 'ember';
 
 export default Ember.Route.extend({
 
-  model (){
-
+  model (id){
     return Ember.RSVP.hash({
-      partners :  this.store.query('user', {"userType":"PARTNER"}),
+      lab :  this.store.queryRecord('user', id),
       currencies: this.store.findAll('currency'),
     });
-
-
   }
 
 });
