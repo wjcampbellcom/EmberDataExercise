@@ -1,5 +1,50 @@
-<div id="lab_container" class="container">
+<div class="row">
 
-<h1>{{model.lab.companyName}}</h1>
+  <div id="lab_container" class="col-md-8 sub-well">
+
+      <div class="panel panel-default">
+        <div class="panel-heading panel-title">
+           {{model.lab.companyName}}
+        </div>
+        <div class="panel-body">
+            <div class="col-xs-12">
+                <label class="col-xs-2">Customer Id</label><span class="labDataItem">{{model.lab.id}}</span>
+            </div>
+            <div class="col-xs-12">
+                <label class="col-xs-2">First Name</label><span class="labDataItem">{{model.lab.firstName}}</span>
+            </div>
+            <div class="col-xs-12">
+            <label class="col-xs-2">Last Name</label><span class="labDataItem">{{model.lab.lastName}}</span>
+        </div>
+            <div class="col-xs-12">
+                <label class="col-xs-2">Email Address</label><span class="labDataItem">{{model.lab.emailAddress}}</span>
+            </div>
+            <div class="col-xs-12">
+                <label class="col-xs-2">Active</label><span class="labDataItem">{{model.lab.active}}</span>
+            </div>
+            <div class="col-xs-12">
+                <label class="col-xs-2">Direct</label><span class="labDataItem">{{model.lab.direct}}</span>
+            </div>
+        </div>
+
+    </div>
+
+  </div>
+
+    <div id="currency_container" class="col-md-3 sub-well">
+
+        <div class="panel panel-default">
+        <div class="panel-title panel-heading">Accepted Currencies</div>
+          <ul class="list-unstyled">
+            <div class="panel-body"> {{#each model.currencies as |currency|}}
+              <li>
+                  {{currency.name}}
+              </li>
+            {{/each}}</div>
+          </ul>
+        </div>
+
+
+    </div>
 
 </div>

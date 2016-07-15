@@ -1,7 +1,7 @@
-<div class="container col-xs-12">
+<div class="col-xs-12 well well-lg">
 <div class="row">
-  {{#bs-dropdown}}
-    {{#bs-dropdown-button}}SELECT A PRINTLAB TO EDIT<span class="caret"></span>{{/bs-dropdown-button}}
+  {{#bs-dropdown }}
+    {{#bs-dropdown-button}}SELECT A LAB TO EDIT ACCEPTED CURRENCIES<span class="caret"></span>{{/bs-dropdown-button}}
     {{#bs-dropdown-menu}}
       {{#each model as |user|}}
           <li>
@@ -13,6 +13,8 @@
     {{/bs-dropdown-menu}}
   {{/bs-dropdown}}
 </div>
-</div>
+
 
 {{outlet}}
+
+</div>
