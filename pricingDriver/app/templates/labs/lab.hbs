@@ -32,19 +32,7 @@
   </div>
 
     <div id="currency_container" class="col-md-3 sub-well">
-
-        <div class="panel panel-default">
-        <div class="panel-title panel-heading">Accepted Currencies</div>
-          <ul class="list-unstyled">
-            <div class="panel-body"> {{#each model.currencies as |currency|}}
-              <li>
-                  {{currency.name}}
-              </li>
-            {{/each}}</div>
-          </ul>
-        </div>
-
-
+      {{currency-selections-panel supportedCurrencies=model.lab.supportedCurrencies currencies=model.currencies}}
     </div>
 
 </div>

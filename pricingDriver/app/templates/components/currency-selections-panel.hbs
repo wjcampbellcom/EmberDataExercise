@@ -1,0 +1,23 @@
+<div class="panel panel-default">
+    <div class="panel-title panel-heading">Accepted Currencies</div>
+    <div>
+    <ul class="list-unstyled">
+        <div class="panel-body">
+          {{#each activeCurrencies as |currency|}}
+              <li>
+                  {{currency-selection-component currency=currency selected=currency.supported changed=(action 'onCurrenciesChanged')}}
+              </li>
+          {{/each}}
+        </div>
+    </ul>
+    </div>
+    <div>
+    <ul class="list-unstyled">
+        <div class="panel-body"> {{#each supportedCurrencies as |currency|}}
+            <li>
+              {{currency.name}}
+            </li>
+        {{/each}}</div>
+    </ul>
+    </div>
+</div>
